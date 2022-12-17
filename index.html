@@ -5,9 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <form action="example.com/path" method="post">
+    <div class="form-details">
     <label for="first-name">First-name:</label>
     <input type="text" id="first-name" placeholder="Diana..." name="first-name" required="name">
     <label for="email">Email:</label>
@@ -18,7 +20,7 @@
 <input type="number" id="amount" name="amount">
 <label for="dob">Date of Birth:</label>
 <input type="date" id="dob" name="dob">
-<textarea rows="20" cols="60">Some initial content</textarea>
+<textarea class="textarea" rows="20" cols="60">Enter some messages here...</textarea>
 <select name="fashion">
   <optgroup label="Clothing">
     <option value="t_shirt">T-Shirts</option>
@@ -33,48 +35,49 @@
 </select>
 
 <h1>Ticket Type</h1>
-<div>
+<div class="ticket-type">
   <input type="radio" id="child" name="ticket_type" value="child">
   <label for="child">Child</label>
 </div>
 
-<div>
+<div class="ticket-type">
   <input type="radio" id="adult" name="ticket_type" value="adult" checked>
   <label for="adult">Adult</label>
 </div>
 
-<div>
+<div class="ticket-type">
   <input type="radio" id="senior" name="ticket_type" value="senior">
   <label for="senior">Senior</label>
 </div>
 
 <h1>Pizza Toppings</h1>
 
-<div>
+<div class="toppings">
   <input type="checkbox" id="sausage" name="topping" value="sausage">
   <label for="sausage">Sausage</label>
 </div>
 
-<div>
+<div class="toppings">
   <input type="checkbox" id="onions" name="topping" value="onions">
   <label for="onions">Onions</label>
 </div>
 
-<div>
+<div class="toppings">
   <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
   <label for="pepperoni">Pepperoni</label>
 </div>
 
-<div>
+<div class="toppings">
   <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
   <label for="mushrooms">Mushrooms</label>
 </div>
 
-<div>
+<div class="toppings">
   <input type="checkbox" id="newsletter" name="news_letter" checked>
-  <label for="newsletter">Send me the news letter</label>
+  <label for="newsletter" class="newsletter">Send me the news letter</label>
 </div>
-<button type="submit">Submit</button>
-  </form>
+<button class="btn" type="submit">Submit</button>
+  </div>
+</form>
 </body>
 </html>
